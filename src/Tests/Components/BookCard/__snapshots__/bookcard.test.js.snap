@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BookCard Should match the snapshot 1`] = `
+<div
+  className="cardContainer"
+>
+  <section
+    className="book-image"
+  >
+    <img
+      alt="art"
+      src="cover_image.jpeg"
+    />
+  </section>
+  <section>
+    <p
+      className="book-name"
+    >
+      Abhinav
+    </p>
+  </section>
+  <section
+    className="book-reaction"
+  >
+    <div
+      className="rating-like"
+    >
+      <div
+        className="rating"
+      >
+        <span>
+          4.5
+        </span>
+      </div>
+      <div
+        className="likes"
+      >
+        <img
+          alt="clap"
+          onClick={[Function]}
+          src="heart-black.svg"
+        />
+      </div>
+    </div>
+  </section>
+</div>
+`;
