@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './style.css';
 import redHeart from '../../Icon/heart-red.svg';
 import blackHeart from '../../Icon/heart-black.svg';
+// const axios = require('axios');
 
 class Card extends Component{
   state = {
@@ -16,6 +17,7 @@ class Card extends Component{
 
   flipLike = () => {
     if(this.state.liked === true) {
+
       return redHeart;
     }
     else {

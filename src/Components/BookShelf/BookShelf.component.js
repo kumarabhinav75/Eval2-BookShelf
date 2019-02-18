@@ -25,7 +25,7 @@ class Main extends Component {
     return (
       <div className="BookShelf">
         <div className="Logo">
-          <span className="LogoName">
+          <span className="LogoName" >
             <div className="LogoIcon">BS</div>
             <div className="LogoText">The Book Shelf</div>
           </span>
