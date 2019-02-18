@@ -1,26 +1,27 @@
 import React, {Component} from 'react';
-// import AllCards from '../AllCards';
+import AuthorShelf from '../AuthorShelf/AuthorShelf.component'
 
 // import cardJSON from '../../mockData/index.json';
 
 import './style.css';
 
-// const axios = require('axios');
+const axios = require('axios');
 
 class Main extends Component {
   state = {
     BooksJSON: [],
   }
 
-  // componentDidMount() {
-  //   return axios.get('https://api.myjson.com/bins/hc5ye')
-  //     .then((jsonObj) => {
-  //       this.setState({cardJSON: jsonObj.data});
-  //       return jsonObj;
-  //     });
-  // }
+  componentDidMount() {
+    return axios.get('http://localhost:8080/books')
+      .then((jsonObj) => {
+        this.setState({BooksJSON: jsonObj.data});
+        return jsonObj;
+      });
+  }
 
   render(){
+    console.log(this.state.BooksJSON["J K Rowling"]);
     return (
       <div className="BookShelf">
         <div className="Logo">
@@ -29,6 +30,14 @@ class Main extends Component {
             <div className="LogoText">The Book Shelf</div>
           </span>
         </div>
+        <fieldset className="author-container">
+        <legend>J.K.Rowling</legend>
+          <AuthorShelf books={this.state.BooksJSON["J K Rowling"]}/>
+        </fieldset>
+        <fieldset className="author-container">
+          <legend>Sidney Sheldon</legend>
+          <AuthorShelf books={this.state.BooksJSON["Sidney Sheldon"]}/>
+        </fieldset>
       </div>
     );
   }

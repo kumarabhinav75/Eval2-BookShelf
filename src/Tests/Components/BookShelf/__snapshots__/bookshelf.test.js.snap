@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BookShelf Should match the snapshot 1`] = `
+<div
+  className="BookShelf"
+>
+  <div
+    className="Logo"
+  >
+    <span
+      className="LogoName"
+    >
+      <div
+        className="LogoIcon"
+      >
+        BS
+      </div>
+      <div
+        className="LogoText"
+      >
+        The Book Shelf
+      </div>
+    </span>
+  </div>
+  <fieldset
+    className="author-container"
+  >
+    <legend>
+      J.K.Rowling
+    </legend>
+     
+  </fieldset>
+  <fieldset
+    className="author-container"
+  >
+    <legend>
+      Sidney Sheldon
+    </legend>
+     
+  </fieldset>
+</div>
+`;
