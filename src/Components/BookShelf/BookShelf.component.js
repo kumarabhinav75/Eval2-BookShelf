@@ -30,14 +30,17 @@ class Main extends Component {
             <div className="LogoText">The Book Shelf</div>
           </span>
         </div>
-        <fieldset className="author-container">
-        <legend>J.K.Rowling</legend>
-          <AuthorShelf books={this.state.BooksJSON["J K Rowling"]}/>
-        </fieldset>
-        <fieldset className="author-container">
-          <legend>Sidney Sheldon</legend>
-          <AuthorShelf books={this.state.BooksJSON["Sidney Sheldon"]}/>
-        </fieldset>
+        <div className="author-shelfs">
+          <fieldset className="author-container">
+          <legend>J.K.Rowling</legend>
+            <AuthorShelf books={this.state.BooksJSON["J K Rowling"]}/>
+          </fieldset>
+          <fieldset className="author-container">
+            <legend>Sidney Sheldon</legend>
+            <AuthorShelf books={this.state.BooksJSON["Sidney Sheldon"]}/>
+          </fieldset>
+        </div>
+
       </div>
     );
   }
